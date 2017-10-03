@@ -1,0 +1,29 @@
+pip install Django - downloaded Django, but gave out a bunch of exceptions and never returned ‘Successfully installed Django”
+
+after some research I ran the 
+	
+sudo pip install django - which returned “Successfully installed django-1.11.5”
+
+pip list - printed a list of my installed packages
+
+pip install Django - returned “Requirement already satisfied” and files location
+
+pip freeze - returned the list of my packages in machine-like syntax
+             help says it “Output installed packages in requirements format.”
+             StackOverflow explains the difference as “pip list include editables 
+             which pip freeze does not.”
+
+pip freeze > requirements.txt - created a txt file on my desktop, that contains
+                          the “Output installed packages in requirements format.”
+
+again had to run 
+
+sudo pip uninstall Django - to get “Successfully uninstalled Django-1.11.5”
+
+pip show Django - gets ignored prompting me back to a new command line
+                  (same with sudo and sudo -H)
+
+pip search Flask - returns a long list with comments explaining what each item is
+
+
+
