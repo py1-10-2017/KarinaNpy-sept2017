@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dojo Survey Index</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="main">
+            <h2>Submitted Info</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td>{{a}}</td>
+                    </tr>
+                    <tr>
+                        <td>Dojo Location:</td>
+                        <td>{{b}}</td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Language:</td>
+                        <td>{{c}}</td>
+                    </tr>
+                    <tr>
+                        <td>Comment:</td>
+                        <td>{{d}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="sub" type="button" name="go_back">Go Back</button>
+        </div>
+    </body>
+</html>

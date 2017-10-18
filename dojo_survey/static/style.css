@@ -1,0 +1,21 @@
+div{
+    height: 300px;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid black;
+}
+h2{
+    text-decoration: underline;
+}
+td{
+    padding: 10px;
+}
+.sub{
+    height: 40px;
+    width: 100px;
+    display: block;
+    background: blue;
+    color: white;
+    font-size: 1.1em;
+    float: right;
+}
