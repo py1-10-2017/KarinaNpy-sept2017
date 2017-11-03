@@ -1,0 +1,24 @@
+.no{
+    height: 20px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    background: red;
+    border: 1px solid black;
+    font-weight: bold;
+    color: white;
+}
+
+.yes{
+    width: 300px;
+    padding: 10px;
+    background: green;
+    border: 1px solid black;
+}
+
+.info{
+    padding: 20px;
+}
+h3{
+    text-decoration: underline;
+}

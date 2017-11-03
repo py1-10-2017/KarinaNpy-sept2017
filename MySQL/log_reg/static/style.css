@@ -1,0 +1,31 @@
+.error{
+    height: auto;
+    width: 700px;
+    text-align: center;
+    padding: 10px;
+    background: red;
+    border: 1px solid black;
+    font-weight: bold;
+    color: white;
+}
+
+.success{
+    width: 700px;
+    padding: 10px;
+    text-align: center;
+    background: green;
+    border: 1px solid black;
+}
+
+input{
+    margin: 5px;
+    display: block;
+}
+
+.register, .login{
+    margin: 50px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+
+}
