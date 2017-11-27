@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Login & Reg | Home</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'logreg/style.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            {% if messages %}
+                {% for message in messages %}
+                <p>{{ message }}</p>
+                {% endfor %}
+            {% endif %}
+            <h1>Registration</h1>
+            <form action="/register" method="POST">
+                {% csrf_token %}
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>First Name:</td>
+                            <td><input type="text" name="first_name"</td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:</td>
+                            <td><input type="text" name="last_name"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td>Confirm pw:</td>
+                            <td><input type="password" name="confirm_pw"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="button" type="submit" value="Register"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <h1>Login</h1>
+            <form action="/login" method="POST">
+                {% csrf_token %}
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="password"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input class="button" type="submit" value="Login"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+    </body>
+</html>

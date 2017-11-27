@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Users Show</title>
+        {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'users/style.css' %}">
+    </head>
+    <body>
+        <div class="main">
+            <h1>User {{ user.id }}</h1>
+            <h3>Full Name: {{ user.first_name }} {{ user.last_name }}</h3>
+            <h3>Email: {{ user.email }}</h3>
+            <h3>Created At: {{ user.created_at }}</h3>
+            <p><a href="/users/{{ user.id }}/edit">Edit</a> | <a href="/users/{{ user.id }}/destroy">Delete</a></p>
+        </div>
+    </body>
+</html>

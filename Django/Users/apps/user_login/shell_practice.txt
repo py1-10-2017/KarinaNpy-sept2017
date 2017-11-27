@@ -1,0 +1,37 @@
+
+>>> from apps.user_login.models import *
+>>> User.objects.create(first_name="Petra", last_name="Lopl", email_address="petra_lopl@django.com", age="35")
+<User: User object>
+
+>>> User.objects.create(first_name="Lilu", last_name="Dallas", email_address="lilu_dallas@django.com", age="42")
+<User: User object>
+
+
+>>> User.objects.all()
+<QuerySet [<User: User object>, <User: User object>]>
+
+>>> User.objects.last()
+<User: User object>
+>>> User.objects.first()
+<User: User object>
+
+>>> User.objects.first().first_name
+u'Petra'
+
+
+>>> User.objects.get(id=2).last_name
+u'Dallas'
+>>> user2 = User.objects.get(id=2)
+>>> user2.last_name
+u'Dallas'
+>>> user2.last_name = "Hurp"
+>>> user2.save()
+>>> user2.last_name
+'Hurp'
+
+
+>>> User.objects.get(id=1).delete()
+(1, {u'user_login.User': 1})
+>>> User.objects.all()
+<QuerySet [<User: User object>]>
+>>> 

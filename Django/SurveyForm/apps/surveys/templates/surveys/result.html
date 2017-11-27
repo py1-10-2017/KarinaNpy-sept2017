@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <p>Thanks for submitting this form! You have submited this form {{ request.session.tries }} times now.</p>
+        <div class="main">
+            <h2>Submitted Information</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td>{{ request.session.name }}</td>
+                    </tr>
+                    <tr>
+                        <td>Dojo Location:</td>
+                        <td>{{ request.session.location }}</td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Language:</td>
+                        <td>{{ request.session.language }}</td>
+                    </tr>
+                    <tr>
+                        <td>Comment:</td>
+                        <td>{{ request.session.comment }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="sub" type="button" name="go_back">Go Back</button>
+        </div>
+    </body>
+</html>

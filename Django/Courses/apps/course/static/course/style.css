@@ -1,0 +1,35 @@
+.main{
+    padding: 30px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    height: auto;
+}
+td, th{
+    padding: 5px;
+}
+
+thead{
+    padding: 5px;
+    background: grey;
+}
+
+.messages{
+    color: red;
+    padding: 10px;
+}
+#no{
+    color: white;
+    background: blue;
+    margin: 10px;
+    padding: 5px;
+}
+
+#yes{
+    color: white;
+    background: red;
+    margin: 10px;
+    padding: 5px;
+}

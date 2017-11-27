@@ -1,0 +1,35 @@
+
+>>> from apps.book_authors.models import *
+>>> Book.objects.create(name="C sharp")
+<Book: Book object>
+>>> Book.objects.create(name="Java")
+<Book: Book object>
+>>> Book.objects.create(name="Python")
+<Book: Book object>
+>>> Book.objects.create(name="PHP")
+<Book: Book object>
+>>> Book.objects.create(name="Ruby")
+<Book: Book object>
+
+>>> Author.objects.create(first_name="Mike")
+<Author: Author object>
+>>> Author.objects.create(first_name="Speros")
+<Author: Author object>
+>>> Author.objects.create(first_name="John")
+<Author: Author object>
+>>> Author.objects.create(first_name="Jadee")
+<Author: Author object>
+>>> Author.objects.create(first_name="Jay")
+<Author: Author object>
+
+>>> b5 = Book.objects.get(id=5)
+>>> b5.name = "C#"
+>>> b5.save()
+>>> b5.name
+'C#'
+
+>>> a5 = Author.objects.get(id=5)
+>>> a5.first_name = "Ketul"
+>>> a5.save()
+>>> a5.first_name
+'Ketul'
